@@ -1,180 +1,218 @@
 body {
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: #f4f4f4;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
 /* Global */
 .container {
-    width: 80%;
-    margin:auto;
-    overflow: hidden;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .button1 {
-    margin-top:5px;
-    height: 35px;
-    background: grey;
-    width: 100px;
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
+  margin-top: 5px;
+  height: 35px;
+  background: grey;
+  width: 100px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
 }
 
 .button1:hover {
-    background: #66cc00;
+  background: #66cc00;
 }
 
 .hoverc:hover {
-    color: #66cc00;
+  color: #66cc00;
 }
 
 .flash {
-    animation: blinkingText 1.2s infinite;
+  animation: blinkingText 1.2s infinite;
 }
 
 @keyframes blinkingText {
-    0%{color: white;}
-    30%{color: #66cc00;}
+  0% {
+    color: white;
+  }
+  30% {
+    color: #66cc00;
+  }
 }
 
 /* Header */
 
 header {
-    background-color: #074365;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: black 3px solid;
+  background-color: #074365;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: black 3px solid;
 }
 
 header a {
-    color: grey;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 header ul {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
 header .branding {
-    float: left;
+  float: left;
 }
 
 header .branding img {
-    margin: 0;
-    margin-top:10px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 header nav {
-    float: right;
-    margin-top: 10px;
+  float: right;
+  margin-top: 10px;
 }
 
-header a:hover{
-    color: #66cc00;
-    font-weight: bold;
+header a:hover {
+  color: #66cc00;
+  font-weight: bold;
 }
 
 header .current a {
-    color: #66cc00;
-    font-weight: bold;
+  color: #66cc00;
+  font-weight: bold;
 }
-
 
 /* Showcase */
 
 .showcase {
-    min-height: 400px;
-    background: url('../img/showcase.jpeg') no-repeat 0 -200px;
-    background-size: cover;
-    text-align: center;
-    color: white;
+  min-height: 400px;
+  background: url("../img/showcase.jpeg") no-repeat 0 -200px;
+  background-size: cover;
+  text-align: center;
+  color: white;
 }
 
 .showcase h1 {
-    margin-top: 100px;
-    font-size: 50px;
-    margin-bottom: 10px;
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .showcase p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 /* newsletter */
 
 .newsletter {
-    padding: 15px;
-    background-color: #074365;
-    border-bottom: 3px solid black;
+  padding: 15px;
+  background-color: #074365;
+  border-bottom: 3px solid black;
 }
 
 .newsletter h1 {
-    color: grey;
-    float: left;
+  color: grey;
+  float: left;
 }
 
 .newsletter form {
-    float: right;
-    margin-top: 20px;
+  float: right;
+  margin-top: 20px;
 }
 
 .newsletter input[type="email"] {
-    padding: 4px;
-    height: 25px;
-    width: 350px;
+  padding: 4px;
+  height: 25px;
+  width: 350px;
 }
 
 /* BOXES */
 
 .boxes {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .boxes .box {
-    float:left;
-    width: 30%;
-    text-align: center;
-    padding: 10px;
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
 }
 
 .boxes .box img {
-    width: 90px;
+  width: 90px;
 }
 
+/* BOXES 2 */
+
+.box2 {  
+  float: left;
+  width: 29%;
+  text-align: center;
+  padding: 10px;
+}
+
+.box2 img {
+  width: 100%;
+  height: 220px;
+}
+
+.box2 p {
+    overflow: hidden;
+}
+
+.box2 a {
+  display: inline-block;
+  width: 95%;
+  padding: 5px 0;
+  background-color: white;
+  border: 1px solid #073f5f;
+  color: #073f5f;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.box2 a:hover {
+    color: #66cc00;
+    transition: color .5s;
+}
 /* FOOTER */
 
 footer {
-    margin-top: 20px;
-    padding: 20px;
-    border-top: 3px solid black;
-    background-color: #074365;
-    text-align: center;
-    font-weight: bold;
-    color: grey;
-    text-transform: uppercase;
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 3px solid black;
+  background-color: #073f5f;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+  text-transform: uppercase;
 }
 
 footer ul a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 footer ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 footer ul a:hover {
-    color:#66cc00;
+  color: #66cc00;
 }
