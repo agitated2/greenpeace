@@ -76,8 +76,8 @@ header .branding {
 }
 
 header .branding img {
-  margin: 0;
   margin-top: 10px;
+  padding: 0;
 }
 
 header nav {
@@ -160,14 +160,13 @@ header .current a {
 
 /* BOXES 2 */
 
-
 .boxes2 {
   margin: auto;
   margin-top: 20px;
   justify-items: center;
 }
 
-.box2 {  
+.box2 {
   float: left;
   width: 29%;
   text-align: center;
@@ -194,9 +193,9 @@ header .current a {
 }
 
 .box2 a:hover {
-    color: white;
-    background-color: #073f5f;
-    transition: background-color .5s;
+  color: white;
+  background-color: #073f5f;
+  transition: background-color 0.5s;
 }
 /* FOOTER */
 
@@ -223,7 +222,6 @@ footer ul {
 footer ul a:hover {
   color: #66cc00;
 }
-
 
 .flex-parent {
   margin-top: 20px;
@@ -260,7 +258,7 @@ footer ul a:hover {
 .flex-child a:hover {
   color: white;
   background-color: #073f5f;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 .cont1 {
@@ -275,4 +273,3 @@ footer ul a:hover {
   padding-top: 13px;
 }
 
-@media 
