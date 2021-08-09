@@ -256,9 +256,11 @@ footer ul a:hover {
 }
 
 .flex-child a:hover {
-  color: white;
   background-color: #073f5f;
   transition: background-color 0.5s;
+  color: white;
+  transition: color .6s;
+  
 }
 
 .cont1 {
