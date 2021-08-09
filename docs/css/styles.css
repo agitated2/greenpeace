@@ -5,6 +5,10 @@ body {
   background-color: #f4f4f4;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Global */
 .container {
   width: 80%;
@@ -47,14 +51,14 @@ body {
 /* Header */
 
 header {
-  background-color: #074365;
+  background-color: #0c4c63;
   padding-top: 30px;
   min-height: 70px;
   border-bottom: black 3px solid;
 }
 
 header a {
-  color: grey;
+  color: #a7ada1;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -119,12 +123,12 @@ header .current a {
 
 .newsletter {
   padding: 15px;
-  background-color: #074365;
+  background-color: rgba(7, 67, 101, 95%);
   border-bottom: 3px solid black;
 }
 
 .newsletter h1 {
-  color: grey;
+  color: #a7ada1;
   float: left;
 }
 
@@ -143,6 +147,7 @@ header .current a {
 
 .boxes {
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .boxes .box {
@@ -154,15 +159,24 @@ header .current a {
 
 .boxes .box img {
   width: 90px;
+  height: 85px;
 }
 
 /* BOXES 2 */
+
+
+.boxes2 {
+  margin: auto;
+  margin-top: 20px;
+  justify-items: center;
+}
 
 .box2 {  
   float: left;
   width: 29%;
   text-align: center;
   padding: 10px;
+  margin: auto;
 }
 
 .box2 img {
@@ -170,26 +184,23 @@ header .current a {
   height: 220px;
 }
 
-.box2 p {
-    overflow: hidden;
-}
-
 .box2 a {
   display: inline-block;
   width: 95%;
   padding: 5px 0;
+  padding-left: 20px;
   background-color: white;
   border: 1px solid #073f5f;
-  color: #073f5f;
+  color: hsl(202, 86%, 20%);
   text-decoration: none;
   font-size: 18px;
   text-align: left;
-  padding-left: 25px;
 }
 
 .box2 a:hover {
-    color: #66cc00;
-    transition: color .5s;
+    color: white;
+    background-color: #073f5f;
+    transition: background-color .5s;
 }
 /* FOOTER */
 
@@ -216,3 +227,56 @@ footer ul {
 footer ul a:hover {
   color: #66cc00;
 }
+
+
+.flex-parent {
+  margin-top: 20px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.flex-child {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+.flex-child a {
+  display: inline-block;
+  width: 90%;
+  padding: 5px 0;
+  padding-left: 20px;
+  background-color: white;
+  border: 1px solid #073f5f;
+  color: hsl(202, 86%, 20%);
+  text-decoration: none;
+  font-size: 18px;
+  text-align: left;
+}
+
+.flex-child img {
+  width: 90%;
+}
+
+.flex-child a:hover {
+  color: white;
+  background-color: #073f5f;
+  transition: background-color .5s;
+}
+
+.cont1 {
+  padding-top: 15px;
+}
+
+.cont2 {
+  padding-top: 15px;
+}
+
+.cont3 img {
+  padding-top: 13px;
+}
+
+@media 
